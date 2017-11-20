@@ -1,0 +1,6 @@
+framework module Pods_ObservableStudy {
+  umbrella header "Pods-ObservableStudy-umbrella.h"
+
+  export *
+  module * { export * }
+}
