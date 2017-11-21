@@ -18,6 +18,9 @@ class ViewController: UIViewController {
         self.observableJust()
         self.observableEmptyOrNeverOrError()
         self.observableOfOrFrom()
+        self.observableDeferred()
+        //self.observableRepeat()
+        self.observableRange()
     }
 
     override func didReceiveMemoryWarning() {
@@ -71,7 +74,6 @@ class ViewController: UIViewController {
         }.disposed(by: disposeBag)
     }
     
-    // 예외처리
     func observableEmptyOrNeverOrError() {
        // let empty = Observable<String>.empty()
        // let never = Observable<String>.never()
@@ -95,6 +97,43 @@ class ViewController: UIViewController {
         from.subscribe { event in
             print(event)
         }.disposed(by: disposeBag)
+    }
+    
+    //subscribe가 발생할때 observable을 생성한다.
+    func observableDeferred() {
+        let disposeBag = DisposeBag()
+        let deferred = Observable<String>.deferred({Observable.just("Deferred")})
+        deferred.subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
+    }
+    
+    // 설정한 element로 반복적으로 이벤트를 발생
+    func observableRepeat() {
+        let disposeBag = DisposeBag()
+        let repeatElement = Observable<String>.repeatElement("repeat")
+        repeatElement.subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
+    }
+    
+    //설정한 Range 내의 이벤트를 발생.(int)만 가능
+    func observableRange() {
+        let disposeBag = DisposeBag()
+        let range = Observable<Int>.range(start:0,count:3)
+        range.subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
+    }
+    
+    // observable 객체를 다른 observable을 통해 관리.
+    func observableUsing() {
+        /*
+        Observable.using({ () -> _ in
+            
+        }) { () -> Observable<_> in
+            
+        } */
     }
 }
 
