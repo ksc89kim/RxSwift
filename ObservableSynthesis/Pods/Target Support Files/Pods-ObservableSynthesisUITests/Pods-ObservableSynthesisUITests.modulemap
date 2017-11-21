@@ -1,0 +1,6 @@
+framework module Pods_ObservableSynthesisUITests {
+  umbrella header "Pods-ObservableSynthesisUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}
