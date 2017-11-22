@@ -21,3 +21,12 @@ SubjectStudy
 1. PublishSubject
 2. BehaviorSubject
 3. ReplaySubject
+
+ObservableSynthesis
+------------------
+1. Observable combineLatest
+2. Observable withLatest
+3. Observable merge
+4. Observable switchLatest
+5. Observable zip
+6. Observable concat

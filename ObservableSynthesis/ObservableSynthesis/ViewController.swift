@@ -19,6 +19,8 @@ class ViewController: UIViewController {
         self.observableWithLatestFrom()
         //self.observableMerge()
         self.observableSwitchLatest()
+        self.observableZip()
+        self.observableConcat()
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,7 +99,24 @@ class ViewController: UIViewController {
         subject1.on(.completed)
         subject2.on(.completed)
         switchLatest.on(.completed)
-        
+    }
+    
+    //zip은 두 Observable의 발생 순서가 같은 이벤트를 조합해서 이벤트를 발생한다.
+    func observableZip() {
+        let boys = Observable.from(["EPO", "EPA", "EPG"])
+        let girls = Observable.from(["APO", "APA", "APG"])
+        Observable.zip(boys,girls).subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
+    }
+    
+    //concat은 두개 혹은 그 이상의 Observable을 직렬로 연결
+    func observableConcat() {
+        let boys = Observable.from(["EPO", "EPA", "EPG"])
+        let girls = Observable.from(["APO", "APA", "APG"])
+        boys.concat(girls).subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
     }
 }
 
