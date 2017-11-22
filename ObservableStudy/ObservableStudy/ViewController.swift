@@ -9,7 +9,8 @@
 import UIKit
 import RxSwift
 class ViewController: UIViewController {
-
+    let disposeBag = DisposeBag()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
@@ -30,8 +31,6 @@ class ViewController: UIViewController {
     
     //기본 발생
     func baseObservable() {
-        let disposeBag = DisposeBag()
-        
         // Observable은 observer의 메소드를 호출하면서 item이나 정보등을 호출(emit)하는 역할을 한다. Observer는 onNext, onError, onCompleted의 메소드가 구현되어 있다.
         // Disposable observer 메모리 해지랑 연관이 있다.
         let baseObservable = Observable<String>.create { observer -> Disposable in
@@ -57,7 +56,6 @@ class ViewController: UIViewController {
     
     //조건식 발생
     func observableGenerate(){
-        let disposeBag = DisposeBag()
         // 조건식 initialState 초기화 condition 조건 iterate: 결과
         let generate = Observable.generate(initialState: 1, condition: { $0 < 30 }, iterate: { $0 + 10})
         generate.subscribe( onNext: {event in
@@ -67,7 +65,6 @@ class ViewController: UIViewController {
     
     //단일 이벤트 발생
     func observableJust() {
-        let disposeBag = DisposeBag()
         let just = Observable<String>.just("JUST TEST");
         just.subscribe { event in
             print(event);
@@ -86,7 +83,6 @@ class ViewController: UIViewController {
     
     //순차적으로 이벤트를 발생
     func observableOfOrFrom() {
-        let disposeBag = DisposeBag()
         let of = Observable<String>.of("KIM","LEE","ZANG")
         of.subscribe { event in
             print(event)
@@ -101,7 +97,6 @@ class ViewController: UIViewController {
     
     //subscribe가 발생할때 observable을 생성한다.
     func observableDeferred() {
-        let disposeBag = DisposeBag()
         let deferred = Observable<String>.deferred({Observable.just("Deferred")})
         deferred.subscribe { event in
             print(event)
@@ -110,7 +105,6 @@ class ViewController: UIViewController {
     
     // 설정한 element로 반복적으로 이벤트를 발생
     func observableRepeat() {
-        let disposeBag = DisposeBag()
         let repeatElement = Observable<String>.repeatElement("repeat")
         repeatElement.subscribe { event in
             print(event)
@@ -119,7 +113,6 @@ class ViewController: UIViewController {
     
     //설정한 Range 내의 이벤트를 발생.(int)만 가능
     func observableRange() {
-        let disposeBag = DisposeBag()
         let range = Observable<Int>.range(start:0,count:3)
         range.subscribe { event in
             print(event)
