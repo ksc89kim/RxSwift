@@ -1,0 +1,6 @@
+framework module Pods_ErrorStudyTests {
+  umbrella header "Pods-ErrorStudyTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
