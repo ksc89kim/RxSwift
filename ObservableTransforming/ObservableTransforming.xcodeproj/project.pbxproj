@@ -1,0 +1,762 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F10E4655F766670F90E98B8 /* Pods_ObservableTransforming.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BEEE23EDD8683190E5A7BED3 /* Pods_ObservableTransforming.framework */; };
+		235737421359BCFBFF0114E2 /* Pods_ObservableTransformingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D2E9C58B21E8541A7CE623F0 /* Pods_ObservableTransformingTests.framework */; };
+		CCC6A8E71FC66201003F8CA3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6A8E61FC66201003F8CA3 /* AppDelegate.swift */; };
+		CCC6A8E91FC66201003F8CA3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6A8E81FC66201003F8CA3 /* ViewController.swift */; };
+		CCC6A8EC1FC66201003F8CA3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6A8EA1FC66201003F8CA3 /* Main.storyboard */; };
+		CCC6A8EE1FC66201003F8CA3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CCC6A8ED1FC66201003F8CA3 /* Assets.xcassets */; };
+		CCC6A8F11FC66201003F8CA3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CCC6A8EF1FC66201003F8CA3 /* LaunchScreen.storyboard */; };
+		CCC6A8FC1FC66201003F8CA3 /* ObservableTransformingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6A8FB1FC66201003F8CA3 /* ObservableTransformingTests.swift */; };
+		CCC6A9071FC66201003F8CA3 /* ObservableTransformingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CCC6A9061FC66201003F8CA3 /* ObservableTransformingUITests.swift */; };
+		F666C943E3209660EE65920C /* Pods_ObservableTransformingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7683AF8F6F6F0258B0600D55 /* Pods_ObservableTransformingUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CCC6A8F81FC66201003F8CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC6A8DB1FC66201003F8CA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC6A8E21FC66201003F8CA3;
+			remoteInfo = ObservableTransforming;
+		};
+		CCC6A9031FC66201003F8CA3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CCC6A8DB1FC66201003F8CA3 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CCC6A8E21FC66201003F8CA3;
+			remoteInfo = ObservableTransforming;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		004554322C01A9CF792FCA8C /* Pods-ObservableTransformingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransformingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransformingUITests/Pods-ObservableTransformingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		1157D8339944A6757BC3C107 /* Pods-ObservableTransformingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransformingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransformingTests/Pods-ObservableTransformingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		1F999086D895F18C465376B3 /* Pods-ObservableTransformingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransformingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransformingUITests/Pods-ObservableTransformingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		7683AF8F6F6F0258B0600D55 /* Pods_ObservableTransformingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservableTransformingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6773D69868AC9E40F7FEB36 /* Pods-ObservableTransformingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransformingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransformingTests/Pods-ObservableTransformingTests.release.xcconfig"; sourceTree = "<group>"; };
+		BDCCF62F683C1D26DCD49EC3 /* Pods-ObservableTransforming.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransforming.release.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransforming/Pods-ObservableTransforming.release.xcconfig"; sourceTree = "<group>"; };
+		BEEE23EDD8683190E5A7BED3 /* Pods_ObservableTransforming.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservableTransforming.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CB1943A93BD1C1D81EF60183 /* Pods-ObservableTransforming.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ObservableTransforming.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ObservableTransforming/Pods-ObservableTransforming.debug.xcconfig"; sourceTree = "<group>"; };
+		CCC6A8E31FC66201003F8CA3 /* ObservableTransforming.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ObservableTransforming.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC6A8E61FC66201003F8CA3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CCC6A8E81FC66201003F8CA3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CCC6A8EB1FC66201003F8CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CCC6A8ED1FC66201003F8CA3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		CCC6A8F01FC66201003F8CA3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		CCC6A8F21FC66201003F8CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC6A8F71FC66201003F8CA3 /* ObservableTransformingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableTransformingTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC6A8FB1FC66201003F8CA3 /* ObservableTransformingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTransformingTests.swift; sourceTree = "<group>"; };
+		CCC6A8FD1FC66201003F8CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CCC6A9021FC66201003F8CA3 /* ObservableTransformingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ObservableTransformingUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CCC6A9061FC66201003F8CA3 /* ObservableTransformingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ObservableTransformingUITests.swift; sourceTree = "<group>"; };
+		CCC6A9081FC66201003F8CA3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D2E9C58B21E8541A7CE623F0 /* Pods_ObservableTransformingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ObservableTransformingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CCC6A8E01FC66201003F8CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F10E4655F766670F90E98B8 /* Pods_ObservableTransforming.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A8F41FC66201003F8CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				235737421359BCFBFF0114E2 /* Pods_ObservableTransformingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A8FF1FC66201003F8CA3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F666C943E3209660EE65920C /* Pods_ObservableTransformingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26275DCAA865C1538678BF2F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				CB1943A93BD1C1D81EF60183 /* Pods-ObservableTransforming.debug.xcconfig */,
+				BDCCF62F683C1D26DCD49EC3 /* Pods-ObservableTransforming.release.xcconfig */,
+				1157D8339944A6757BC3C107 /* Pods-ObservableTransformingTests.debug.xcconfig */,
+				A6773D69868AC9E40F7FEB36 /* Pods-ObservableTransformingTests.release.xcconfig */,
+				1F999086D895F18C465376B3 /* Pods-ObservableTransformingUITests.debug.xcconfig */,
+				004554322C01A9CF792FCA8C /* Pods-ObservableTransformingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		B2E60F271BAD721B24EA5D0E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BEEE23EDD8683190E5A7BED3 /* Pods_ObservableTransforming.framework */,
+				D2E9C58B21E8541A7CE623F0 /* Pods_ObservableTransformingTests.framework */,
+				7683AF8F6F6F0258B0600D55 /* Pods_ObservableTransformingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CCC6A8DA1FC66201003F8CA3 = {
+			isa = PBXGroup;
+			children = (
+				CCC6A8E51FC66201003F8CA3 /* ObservableTransforming */,
+				CCC6A8FA1FC66201003F8CA3 /* ObservableTransformingTests */,
+				CCC6A9051FC66201003F8CA3 /* ObservableTransformingUITests */,
+				CCC6A8E41FC66201003F8CA3 /* Products */,
+				26275DCAA865C1538678BF2F /* Pods */,
+				B2E60F271BAD721B24EA5D0E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		CCC6A8E41FC66201003F8CA3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CCC6A8E31FC66201003F8CA3 /* ObservableTransforming.app */,
+				CCC6A8F71FC66201003F8CA3 /* ObservableTransformingTests.xctest */,
+				CCC6A9021FC66201003F8CA3 /* ObservableTransformingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CCC6A8E51FC66201003F8CA3 /* ObservableTransforming */ = {
+			isa = PBXGroup;
+			children = (
+				CCC6A8E61FC66201003F8CA3 /* AppDelegate.swift */,
+				CCC6A8E81FC66201003F8CA3 /* ViewController.swift */,
+				CCC6A8EA1FC66201003F8CA3 /* Main.storyboard */,
+				CCC6A8ED1FC66201003F8CA3 /* Assets.xcassets */,
+				CCC6A8EF1FC66201003F8CA3 /* LaunchScreen.storyboard */,
+				CCC6A8F21FC66201003F8CA3 /* Info.plist */,
+			);
+			path = ObservableTransforming;
+			sourceTree = "<group>";
+		};
+		CCC6A8FA1FC66201003F8CA3 /* ObservableTransformingTests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC6A8FB1FC66201003F8CA3 /* ObservableTransformingTests.swift */,
+				CCC6A8FD1FC66201003F8CA3 /* Info.plist */,
+			);
+			path = ObservableTransformingTests;
+			sourceTree = "<group>";
+		};
+		CCC6A9051FC66201003F8CA3 /* ObservableTransformingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				CCC6A9061FC66201003F8CA3 /* ObservableTransformingUITests.swift */,
+				CCC6A9081FC66201003F8CA3 /* Info.plist */,
+			);
+			path = ObservableTransformingUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CCC6A8E21FC66201003F8CA3 /* ObservableTransforming */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC6A90B1FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransforming" */;
+			buildPhases = (
+				8F8971C61A3F336A129BCE0B /* [CP] Check Pods Manifest.lock */,
+				CCC6A8DF1FC66201003F8CA3 /* Sources */,
+				CCC6A8E01FC66201003F8CA3 /* Frameworks */,
+				CCC6A8E11FC66201003F8CA3 /* Resources */,
+				633012BAFFF16DAA73A7D649 /* [CP] Embed Pods Frameworks */,
+				92B78D510717DDD15EBBA84A /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ObservableTransforming;
+			productName = ObservableTransforming;
+			productReference = CCC6A8E31FC66201003F8CA3 /* ObservableTransforming.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CCC6A8F61FC66201003F8CA3 /* ObservableTransformingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC6A90E1FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransformingTests" */;
+			buildPhases = (
+				6E33F7A18D7BDE6B9143D3BC /* [CP] Check Pods Manifest.lock */,
+				CCC6A8F31FC66201003F8CA3 /* Sources */,
+				CCC6A8F41FC66201003F8CA3 /* Frameworks */,
+				CCC6A8F51FC66201003F8CA3 /* Resources */,
+				BD38569DBEF90706F54CC722 /* [CP] Embed Pods Frameworks */,
+				A9494E9FCCF3F27C6E5DF66B /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC6A8F91FC66201003F8CA3 /* PBXTargetDependency */,
+			);
+			name = ObservableTransformingTests;
+			productName = ObservableTransformingTests;
+			productReference = CCC6A8F71FC66201003F8CA3 /* ObservableTransformingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		CCC6A9011FC66201003F8CA3 /* ObservableTransformingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CCC6A9111FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransformingUITests" */;
+			buildPhases = (
+				E8D0AE5406EB4F01B45A54DE /* [CP] Check Pods Manifest.lock */,
+				CCC6A8FE1FC66201003F8CA3 /* Sources */,
+				CCC6A8FF1FC66201003F8CA3 /* Frameworks */,
+				CCC6A9001FC66201003F8CA3 /* Resources */,
+				AD82C1C40CBEEC3493E3FB75 /* [CP] Embed Pods Frameworks */,
+				E2A4D0A89D0059076BD8E990 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CCC6A9041FC66201003F8CA3 /* PBXTargetDependency */,
+			);
+			name = ObservableTransformingUITests;
+			productName = ObservableTransformingUITests;
+			productReference = CCC6A9021FC66201003F8CA3 /* ObservableTransformingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CCC6A8DB1FC66201003F8CA3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0900;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = tronplay;
+				TargetAttributes = {
+					CCC6A8E21FC66201003F8CA3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+					};
+					CCC6A8F61FC66201003F8CA3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCC6A8E21FC66201003F8CA3;
+					};
+					CCC6A9011FC66201003F8CA3 = {
+						CreatedOnToolsVersion = 9.0.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = CCC6A8E21FC66201003F8CA3;
+					};
+				};
+			};
+			buildConfigurationList = CCC6A8DE1FC66201003F8CA3 /* Build configuration list for PBXProject "ObservableTransforming" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CCC6A8DA1FC66201003F8CA3;
+			productRefGroup = CCC6A8E41FC66201003F8CA3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CCC6A8E21FC66201003F8CA3 /* ObservableTransforming */,
+				CCC6A8F61FC66201003F8CA3 /* ObservableTransformingTests */,
+				CCC6A9011FC66201003F8CA3 /* ObservableTransformingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CCC6A8E11FC66201003F8CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC6A8F11FC66201003F8CA3 /* LaunchScreen.storyboard in Resources */,
+				CCC6A8EE1FC66201003F8CA3 /* Assets.xcassets in Resources */,
+				CCC6A8EC1FC66201003F8CA3 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A8F51FC66201003F8CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A9001FC66201003F8CA3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		633012BAFFF16DAA73A7D649 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransforming/Pods-ObservableTransforming-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransforming/Pods-ObservableTransforming-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E33F7A18D7BDE6B9143D3BC /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObservableTransformingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8F8971C61A3F336A129BCE0B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObservableTransforming-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		92B78D510717DDD15EBBA84A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransforming/Pods-ObservableTransforming-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A9494E9FCCF3F27C6E5DF66B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransformingTests/Pods-ObservableTransformingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD82C1C40CBEEC3493E3FB75 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransformingUITests/Pods-ObservableTransformingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BD38569DBEF90706F54CC722 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransformingTests/Pods-ObservableTransformingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2A4D0A89D0059076BD8E990 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ObservableTransformingUITests/Pods-ObservableTransformingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8D0AE5406EB4F01B45A54DE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ObservableTransformingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CCC6A8DF1FC66201003F8CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC6A8E91FC66201003F8CA3 /* ViewController.swift in Sources */,
+				CCC6A8E71FC66201003F8CA3 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A8F31FC66201003F8CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC6A8FC1FC66201003F8CA3 /* ObservableTransformingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CCC6A8FE1FC66201003F8CA3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CCC6A9071FC66201003F8CA3 /* ObservableTransformingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CCC6A8F91FC66201003F8CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC6A8E21FC66201003F8CA3 /* ObservableTransforming */;
+			targetProxy = CCC6A8F81FC66201003F8CA3 /* PBXContainerItemProxy */;
+		};
+		CCC6A9041FC66201003F8CA3 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CCC6A8E21FC66201003F8CA3 /* ObservableTransforming */;
+			targetProxy = CCC6A9031FC66201003F8CA3 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CCC6A8EA1FC66201003F8CA3 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC6A8EB1FC66201003F8CA3 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CCC6A8EF1FC66201003F8CA3 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CCC6A8F01FC66201003F8CA3 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CCC6A9091FC66201003F8CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		CCC6A90A1FC66201003F8CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CCC6A90C1FC66201003F8CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = CB1943A93BD1C1D81EF60183 /* Pods-ObservableTransforming.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransforming/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransforming;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CCC6A90D1FC66201003F8CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BDCCF62F683C1D26DCD49EC3 /* Pods-ObservableTransforming.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransforming/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransforming;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		CCC6A90F1FC66201003F8CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1157D8339944A6757BC3C107 /* Pods-ObservableTransformingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransformingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransformingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObservableTransforming.app/ObservableTransforming";
+			};
+			name = Debug;
+		};
+		CCC6A9101FC66201003F8CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A6773D69868AC9E40F7FEB36 /* Pods-ObservableTransformingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransformingTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransformingTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ObservableTransforming.app/ObservableTransforming";
+			};
+			name = Release;
+		};
+		CCC6A9121FC66201003F8CA3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F999086D895F18C465376B3 /* Pods-ObservableTransformingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransformingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransformingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObservableTransforming;
+			};
+			name = Debug;
+		};
+		CCC6A9131FC66201003F8CA3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 004554322C01A9CF792FCA8C /* Pods-ObservableTransformingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = ObservableTransformingUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.tronplay.tronplay.ObservableTransformingUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = ObservableTransforming;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CCC6A8DE1FC66201003F8CA3 /* Build configuration list for PBXProject "ObservableTransforming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC6A9091FC66201003F8CA3 /* Debug */,
+				CCC6A90A1FC66201003F8CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC6A90B1FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransforming" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC6A90C1FC66201003F8CA3 /* Debug */,
+				CCC6A90D1FC66201003F8CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC6A90E1FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransformingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC6A90F1FC66201003F8CA3 /* Debug */,
+				CCC6A9101FC66201003F8CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CCC6A9111FC66201003F8CA3 /* Build configuration list for PBXNativeTarget "ObservableTransformingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CCC6A9121FC66201003F8CA3 /* Debug */,
+				CCC6A9131FC66201003F8CA3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CCC6A8DB1FC66201003F8CA3 /* Project object */;
+}

@@ -37,3 +37,11 @@ ErrorStudy
 2. catchErrorJustReturn
 3. retry
 4. retryWhen
+
+ObservableTransforming
+------------------
+1. Observable buffer
+2. Observable flatMap
+3. Observable map
+4. scan
+5. window
