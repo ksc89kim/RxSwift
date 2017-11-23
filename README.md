@@ -43,5 +43,5 @@ ObservableTransforming
 1. Observable buffer
 2. Observable flatMap
 3. Observable map
-4. scan
-5. window
+4. Observable scan
+5. Observable window
