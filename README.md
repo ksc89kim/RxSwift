@@ -30,3 +30,10 @@ ObservableSynthesis
 4. Observable switchLatest
 5. Observable zip
 6. Observable concat
+
+ErrorStudy
+------------------
+1. catchError
+2. catchErrorJustReturn
+3. retry
+4. retryWhen

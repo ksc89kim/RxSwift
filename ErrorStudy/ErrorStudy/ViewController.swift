@@ -16,6 +16,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
         self.catchError()
         self.catchErrorJustReturn()
+        self.reTry()
     }
 
     override func didReceiveMemoryWarning() {
@@ -67,7 +68,37 @@ class ViewController: UIViewController {
     
     //시퀀스가 정상동작하기를 기대하며 재시도 하는 연산자이다.
     func reTry(){
-        
+        var errorCount = 0
+        let zoo = Observable<String>.create { observer in
+            for count in 1...3 {
+                if errorCount == 2 {
+                    print("error")
+                    errorCount+=1
+                    let error = NSError(domain:"dummyError", code:0, userInfo:nil)
+                    observer.on(.error(error))
+                } else {
+                    errorCount+=1
+                    observer.on(.next("Rabbit\(count)"))
+                }
+                
+            }
+            observer.on(.completed)
+            return Disposables.create {
+                print("dispose")
+            }
+        }
+        zoo.retry().subscribe(onNext:{ message in
+            print(message)
+        }).disposed(by: disposeBag)
+ 
+        //retry하는 시점을 지정할 수 있다.
+        /*
+        zoo.retryWhen { (_) -> Observable<Int> in
+            return Observable.timer(3,scheduler:MainScheduler.instance)
+        }.subscribe(onNext:{ message in
+                print(message)
+        }).disposed(by: disposeBag) */
     }
+    
 }
 
