@@ -20,6 +20,9 @@ class ViewController: UIViewController {
         //self.observableFlatMapFirst()
         //self.observableFlatMapLatest()
         //self.observableMap()
+        //self.observableScan()
+        //self.observableWindow()
+        self.observableReduce()
     }
 
     override func didReceiveMemoryWarning() {
@@ -97,7 +100,35 @@ class ViewController: UIViewController {
     
     //scan은 값을 축적해서가지고 있을수 있으며, 이 값을 통해 이벤트를 변형할수 있는 메서드이다.
     func observableScan() {
-        
+        let timer = Observable<Int>.interval(1.0, scheduler: MainScheduler.instance)
+        let scanTest = timer.scan(1) { (accumulator, num) -> Int in
+            print("accumulator = \(accumulator)")
+            print("num = \(num)")
+            return accumulator+num
+        }
+        scanTest.subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
+    }
+    
+    //buffer와 유사하지만 새로운 observable을 생성한다.
+    func observableWindow() {
+        let rangeObservable = Observable<Int>.range(start: 0, count: 20)
+        let windowTest = rangeObservable.window(timeSpan: 1000, count: 10, scheduler: MainScheduler.instance)
+        windowTest.subscribe (onNext: { [unowned self] observable in
+            observable.subscribe{ event in
+                print(event)
+            }.disposed(by: self.disposeBag)
+        }).disposed(by: disposeBag)
+    }
+    
+    // 기본 값을 가지고,  emit된 값들을 연산해서 하나의 결과값을 emit을 방출한다.
+    func observableReduce() {
+        let rangeObservable = Observable<Int>.range(start: 0, count: 20)
+        let reduceTest = rangeObservable.reduce(0,accumulator:+)
+        reduceTest.subscribe { event in
+            print(event)
+        }.disposed(by: disposeBag)
     }
 }
 
