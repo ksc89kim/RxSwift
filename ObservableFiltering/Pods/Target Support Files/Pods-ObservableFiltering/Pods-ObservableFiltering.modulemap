@@ -1,0 +1,6 @@
+framework module Pods_ObservableFiltering {
+  umbrella header "Pods-ObservableFiltering-umbrella.h"
+
+  export *
+  module * { export * }
+}
