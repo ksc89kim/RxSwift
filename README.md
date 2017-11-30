@@ -45,3 +45,19 @@ ObservableTransforming
 3. Observable map
 4. Observable scan
 5. Observable window
+
+ObservableFiltering
+------------------
+Observable debounce
+Observable distinct
+Observable elementAt
+Observable single
+Observable filter
+Observable sample
+Observable skip
+Observable skipWhile
+Observable skipUntil
+Observable take
+Observable takeLast
+Observable takeUntil
+Observable takeWhile
