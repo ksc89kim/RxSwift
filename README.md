@@ -48,16 +48,16 @@ ObservableTransforming
 
 ObservableFiltering
 ------------------
-Observable debounce
-Observable distinct
-Observable elementAt
-Observable single
-Observable filter
-Observable sample
-Observable skip
-Observable skipWhile
-Observable skipUntil
-Observable take
-Observable takeLast
-Observable takeUntil
-Observable takeWhile
+1. Observable debounce
+2. Observable distinct
+3. Observable elementAt
+4. Observable single
+5. Observable filter
+6. Observable sample
+7. Observable skip
+8. Osbservable skipWhile
+9. Observable skipUntil
+10. Observable take
+11. Observable takeLast
+12. Observable takeUntil
+13. Observable takeWhile
