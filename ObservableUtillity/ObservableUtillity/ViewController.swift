@@ -16,7 +16,9 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         //observableDoOn()
-        self.observeOn()
+        //self.observeOn()
+        //observeSubscribeOn()
+        self.observableTimeOut()
     }
 
     override func didReceiveMemoryWarning() {
@@ -43,6 +45,51 @@ class ViewController: UIViewController {
             .subscribe({ _ in
                 print("subscribeNext \(Thread.isMainThread)")
         }).disposed(by: disposeBag)
+    }
+    
+    // observable의 시퀀스가 수행될 스케쥴러를 지정한다.
+    func observeSubscribeOn(){
+        let test = Observable<String>.create { observer in
+            for count in 1 ... 3 {
+                print("observable \(Thread.isMainThread)")
+                observer.on(.next("\(count)"))
+            }
+            observer.on(.completed)
+            return Disposables.create {
+                print("dispose")
+            }
+            
+        }
+        
+        test.observeOn(MainScheduler.instance)
+            .map { (intValue) -> String in
+                print("map \(Thread.isMainThread)")
+                return "\(intValue)"
+            }
+            .subscribeOn(ConcurrentDispatchQueueScheduler(qos:.background))
+            .do(onNext: { event in
+                print("doOn Next \(Thread.isMainThread)")
+                
+            })
+            .observeOn(ConcurrentDispatchQueueScheduler(qos:.background))
+            .subscribe { event in
+                print("subscribe next \(Thread.isMainThread)")
+                
+        }.disposed(by: disposeBag)
+    }
+    
+    // 지정된 시간동안 이벤트가 발생하지 않으면 error를 발생한다.
+    func observableTimeOut() {
+        let observable = Observable<Int>.interval(0.5, scheduler:MainScheduler.instance).filter {  $0 < 3 }
+        
+        observable.timeout(1, scheduler: MainScheduler.instance)
+            .do(onNext: { item in
+                print(item)
+            }, onError: { error in
+                print("error")
+            }, onCompleted: nil).subscribe(onNext: { event in
+                print(event)
+            }).disposed(by: disposeBag)
     }
 }
 
