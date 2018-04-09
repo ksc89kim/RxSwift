@@ -61,3 +61,11 @@ ObservableFiltering
 11. Observable takeLast
 12. Observable takeUntil
 13. Observable takeWhile
+
+ObservableUtillity
+------------------
+1. Observable DoOn
+2. Observable On
+3. Observable SubscribeOn
+4. Observable TimeOut
+
