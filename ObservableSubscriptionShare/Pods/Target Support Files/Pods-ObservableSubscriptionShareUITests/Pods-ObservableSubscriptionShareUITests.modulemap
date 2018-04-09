@@ -1,0 +1,6 @@
+framework module Pods_ObservableSubscriptionShareUITests {
+  umbrella header "Pods-ObservableSubscriptionShareUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -16,7 +16,7 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.publishSubject()
-        self.behaviorSubject()
+        //self.behaviorSubject()
     }
 
     override func didReceiveMemoryWarning() {
@@ -28,6 +28,7 @@ class ViewController: UIViewController {
     // subscribe된 시점 이전의 이벤트는 전달하지 않는다.
     func publishSubject() {
         let publishSubject = PublishSubject<String>()
+        publishSubject.on(.next("0"))
         
         publishSubject.subscribe { event in
             print(event)
